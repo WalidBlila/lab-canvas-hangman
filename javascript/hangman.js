@@ -1,6 +1,6 @@
 class Hangman {
   constructor(words) {
-    this.words = words [];
+    this.words = [];
     this.secretWord = '';
     this.letters = [];
     this.guessedLetters = '';
@@ -15,6 +15,12 @@ class Hangman {
   }
 
   checkIfLetter(keyCode) {
+    if (keyCode > 64 && keyCode < 91){
+    return true
+     } else { 
+    return false
+     }
+    }
     // ... your code goes here
   }
 

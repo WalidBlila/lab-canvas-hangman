@@ -34,15 +34,18 @@ class Hangman {
   }
 
   addCorrectLetter(letter) {
-    // ... your code goes here
+    this.guessedLetters += letter
   }
 
   addWrongLetter(letter) {
-    // ... your code goes here
-  }
+this.errorsLeft--  }
 
   checkGameOver() {
-    // ... your code goes here
+    if (this.errorsLeft > 0) {
+      return false
+    }else {
+      return true
+    }
   }
 
   checkWinner() {

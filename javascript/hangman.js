@@ -42,7 +42,6 @@ this.errorsLeft--  }
   checkWinner() {
   if(this.guessedLetters.length === this.secretWord.length) {
     return true
-  
   } else{
     return false
   }

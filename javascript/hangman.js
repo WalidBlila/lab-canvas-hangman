@@ -34,6 +34,8 @@ class Hangman {
   }
 
   addCorrectLetter(letter) {
+  
+    
     // ... your code goes here
   }
 
